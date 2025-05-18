@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp-1
+  name: webapp-2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webapp-1
+      app: webapp-2
   template:
     metadata:
       labels:
-        app: webapp-1
+        app: webapp-2
     spec:
       containers:
       - image: mywebapp:1.0.0
-        name: mywebapp-1
+        name: mywebapp-2
         ports:
         - containerPort: 8080
 
