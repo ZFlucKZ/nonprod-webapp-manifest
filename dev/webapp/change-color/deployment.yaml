@@ -6,15 +6,15 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webapp
+      app: webapp-1
   template:
     metadata:
       labels:
-        app: webapp
+        app: webapp-1
     spec:
       containers:
       - image: mywebapp:1.0.0
-        name: mywebapp
+        name: mywebapp-1
         ports:
         - containerPort: 8080
 
